@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a {
+  text-decoration: none;  
+
+}
+
+:root {
+  --white-background: rgb(245, 245, 245);
+  --black-background: rgb(20, 18, 28);
+
+  --purple-white-background: rgb(112, 0, 240);
+  --purple-black-background: rgb(151, 59, 255);
+}
+
+
+/* General content */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-background);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Sora', sans-serif;
+
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 60px;
+
+}
+
+.header-button, .moon-icon, label {
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  cursor: pointer;
+  background: none;
+  border: none;
+  right: 13px;
+  top: 13px;
+
+  box-sizing: border-box;
+}
+
+.header-button {
+  visibility: hidden;
+}
+
+#theme-button {
+  right: 500px;
+
+}
+
+.icon {
+  font-size: 28px;
+
+}
+
+
+.header-button:hover {
+  transition: 0.5s;
+  top: 30px; /* Up-down transition */
+  /* font-size: 28px; Font-size transition */
+
+}
+
+.header-button:hover ion-icon{
+  transition: 0.5s;
+  color: red;
+
+}
+
+.header-button:checked {
+  transition: 1s;
+  box-shadow: 0 0 0 5000px rgb(26, 25, 37); 
+  border-radius: 9px;
+
+  z-index: 1;
+}
+
+/* Main content */
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 755px;
+  justify-content: center;
+
+  z-index: 100;
+}
+
+h1 {
+  transition: 0.5s;
+
+}
+
+h3 {
+  letter-spacing: 1px;
+  line-height: 46px;
+
+}
+
+/* Footer */
+footer {
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 160px;
+ /* border: 2px solid rgb(149, 0, 255); */
+  justify-content: center;
+  padding: 50px;
+
+}
+
+footer span {
+  transition: 0.5s;
+  position: relative;
+  font-size: 13px;
+  cursor: default;
+
+  z-index: 5;
+}
+
+footer span:hover {
+  transition: 0.5s;
+  
+  text-decoration: underline 1.5px black;
+
+}
+
+/* Text in site */
+.main-title {
+  font-size: 120px;
+  margin-bottom: 48px;
+  cursor: default;
+
+}
+
+/* Form */
+input[type=text], input[type=submit], select {
+  height: 38px;
+  border: 1px solid var(--purple-white-background);
+
+}
+
+input[type=text] {
+  width: 227px;
+  border: 3px solid var(--purple-white-background);
+  font-family: 'Sora', sans-serif;
+  font-size: 15.2px;
+  padding: 4px;
+
+}
+
+input[type=submit] {
+  transition: 0.5s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  width: 70px;
+  border-radius: 60px;
+  background-color: var(--purple-white-background);
+  color: white;
+  right: 27px;
+  font-size: 15px;
+  /* font-family: 'Sora', sans-serif; */
+
+}
+
+input[type=submit]:hover {
+  transition: 0.5s;
+  right: 19px;
+ /* font-size: 14px; */
+
+}
+
+select {
+  transition: 0.5s ease-in-out;
+  width: 40px;
+  border: 2px solid var(--purple-white-background);
+  background-color: var(--purple-white-background);
+  color: white;
+  cursor: pointer;
+
+}
+
+select:hover {
+  transition: 0.5s;
+  background-color: rgb(145, 53, 250);
+
+}
+
+select option {
+  transition: 0.5s;
+
+}
+
+.division {
+  font-size: 17px;;
+
+}
+
+.multiplication {
+  font-size: 17px;;
+
+}
+
+/* Mobile Config */
+@media screen and (max-width: 700px) {
+    main .main-title {
+      transition: 0.5s;
+      font-size: 75px;
+      text-align: center;
+      padding-right: 22px;
+  }
+
+}
+
+
+/* Dark theme configuration */
+.dark-text {
+  color: white;
+
+}
+
+
+/* Developed by Gabriel A. */
